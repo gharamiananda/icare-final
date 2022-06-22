@@ -49,14 +49,15 @@ function App() {
 
 
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="about" element={<AboutPage />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/home" element={<Home />} />
+              <Route exact path="about" element={<AboutPage />} />
 
-              <Route path="collages" element={<Collages />} />
-              <Route path="courses" element={<Courses />} />
-              <Route path="academics" element={<Academics />} />
-              <Route path="admission" element={<Admission />} />
-              <Route path="contact-us" element={<ContactUs />} />
+              <Route exact path="collages" element={<Collages />} />
+              <Route exact path="courses" element={<Courses />} />
+              <Route exact path="academics" element={<Academics />} />
+              <Route exact path="admission" element={<Admission />} />
+              <Route exact path="contact-us" element={<ContactUs />} />
             </Routes>
 
             <Footer></Footer>

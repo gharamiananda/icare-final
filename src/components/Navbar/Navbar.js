@@ -35,15 +35,15 @@ const Navbar = () => {
                 <div class="main-header-two__top">
                     <div class="container">
                         <div class="main-header-two__top-inner">
-                            <div class="main-header-two__top-left">
-
-                            </div>
+                            {/* <div class="main-header-two__top-left">
+                                <p class="main-header-two__top-left-text">We provide complete home renovation services. </p>
+                            </div> */}
                             <div class="main-header-two__top-right">
                                 <div class="main-header-two__top-social">
                                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -60,10 +60,9 @@ const Navbar = () => {
                             <div class="main-header-two__shape-6"></div>
                             <div class="main-header-two__shape-7"></div>
                             <div class="main-header-two__logo">
-                                <a href="index.html"><img src="assets/images/resources/icare.png" alt=""
-                                    class="mainlogoheader" /></a>
+                                <a href="index.html"><img src={logo} alt="" /></a>
                             </div>
-                            <div class="main-header-two__address  d-none d-sm-block">
+                            <div class="main-header-two__address">
                                 <ul class="list-unstyled main-header-two__address-list">
                                     <li>
                                         <div class="icon">
@@ -71,7 +70,7 @@ const Navbar = () => {
                                         </div>
                                         <div class="content">
                                             <p>Call Anytime</p>
-                                            <h5><a href="tel:91(03224) 255275">+91(03224) 255275</a></h5>
+                                            <h5><a href="tel:9200368090">+92 (003) 68-090</a></h5>
                                         </div>
                                     </li>
                                     <li>
@@ -80,8 +79,7 @@ const Navbar = () => {
                                         </div>
                                         <div class="content">
                                             <p>Send Email</p>
-                                            <h5><a href="mailto:icare_haldia@rediffmail.com">icare_haldia@rediffmail.com</a>
-                                            </h5>
+                                            <h5><a href="mailto:needhelp@company.com">needhelp@company.com</a></h5>
                                         </div>
                                     </li>
                                     <li>
@@ -89,8 +87,8 @@ const Navbar = () => {
                                             <span class="icon-location"></span>
                                         </div>
                                         <div class="content">
-                                            <p>Address</p>
-                                            <h5>ICARE Complex, HIT Campus, P.O.-Hatiberia, Haldia</h5>
+                                            <p>380 St Kilda Road</p>
+                                            <h5>Melbourne, Australia</h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -107,26 +105,21 @@ const Navbar = () => {
                                     <div class="main-menu-two__main-menu-box">
                                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                         <ul class="main-menu__list">
-                                            <li class="current">
+                                            <li class="dropdown current megamenu">
                                                 <a href="index.html">Home </a>
+
                                             </li>
                                             <li>
-                                                <a href="about-us.html">About Icare</a>
+                                                <a href="about.html">About</a>
                                             </li>
+
+
                                             <li>
-                                                <a href="colleges.html">Colleges</a>
+                                                <a href="contact.html">Contact </a>
                                             </li>
+
                                             <li>
-                                                <a href="courses.html">Courses</a>
-                                            </li>
-                                            <li>
-                                                <a href="academics.html">Academics</a>
-                                            </li>
-                                            <li>
-                                                <a href="admission.html">Admission</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Contact us</a>
+                                                <a href="contact.html">Contact </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -136,8 +129,7 @@ const Navbar = () => {
                                         <a href="#" class="main-menu-two__search search-toggler icon-magnifying-glass"></a>
                                     </div>
                                     <div class="main-menu-two__btn-box">
-                                        <a href="contact.html" class="thm-btn main-menu-two__btn"> <i
-                                            class="fa fa-arrow-right"></i> Enquiry</a>
+                                        <a href="contact.html" class="thm-btn main-menu-two__btn"> <i class="fa fa-arrow-right"></i> Free estimate</a>
                                     </div>
                                 </div>
                             </div>
@@ -145,10 +137,6 @@ const Navbar = () => {
                     </div>
                 </nav>
             </header>
-
-            <div class="stricky-header stricked-menu main-menu main-menu-two">
-                <div class="sticky-header__content"></div>
-            </div>
         </div>
     );
 };
