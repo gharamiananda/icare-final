@@ -1,0 +1,33 @@
+.main-slider .swiper-button-prev,
+.main-slider .swiper-button-next {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+.main-slider .swiper-button-prev {
+
+    left: 90%;
+    top: 43%;
+
+
+}
+
+.main-slider .swiper-button-next {
+    left: 90%;
+    top: 54%;
+
+
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+
+
+
+
+
+    font-size: 25px;
+    color: #fff;
+}

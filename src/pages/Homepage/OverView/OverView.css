@@ -1,0 +1,243 @@
+/*--------------------------------------------------------------
+# Trust Company
+--------------------------------------------------------------*/
+.trust-company {
+    position: relative;
+    display: block;
+    padding: 138px 0 120px;
+    overflow: hidden;
+}
+
+.trust-company-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trust-company-bg:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(21, 21, 24, .80);
+}
+
+.trust-company-shape-1 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 2;
+}
+
+.trust-company-shape-1 img {
+    width: auto;
+}
+
+.trust-company-shape-2 {
+    position: absolute;
+    top: -95px;
+    left: 195px;
+    width: 5px;
+    height: 616px;
+    background-color: #FFF;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.trust-company-shape-3 {
+    position: absolute;
+    top: -63px;
+    left: 317px;
+    width: 5px;
+    height: 400px;
+    background-color: #ffffff;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.trust-company-shape-4 {
+    position: absolute;
+    top: -184px;
+    left: 310px;
+    width: 105px;
+    height: 812px;
+    background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    transform: rotate(45deg);
+    mix-blend-mode: soft-light;
+    z-index: 2;
+}
+
+.trust-company__left {
+    position: relative;
+    display: block;
+    z-index: 3;
+}
+
+.trust-company__video-link {
+    position: relative;
+    display: block;
+    margin-left: 16px;
+    z-index: 3;
+}
+
+.trust-company__video-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--roofsie-white);
+    background-color: #2b64b1;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.trust-company__video-icon:hover {
+    background-color: var(--roofsie-white);
+    color: #2b64b1;
+}
+
+.trust-company__video-icon:before {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    bottom: -16px;
+    content: "";
+    border-radius: 50%;
+    border: 1px solid var(--roofsie-white);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.trust-company__video-link .ripple,
+.trust-company__video-icon .ripple:before,
+.trust-company__video-icon .ripple:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 98px;
+    height: 98px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0 rgba(var(--roofsie-primary-rgb), 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(var(--roofsie-primary-rgb), 0.6);
+    -webkit-box-shadow: 0 0 0 0 rgba(var(--roofsie-primary-rgb), 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--roofsie-primary-rgb), 0.6);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+    border-radius: 50%;
+}
+
+.trust-company__video-icon .ripple:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+}
+
+.trust-company__video-icon .ripple:after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+}
+
+.trust-company__title {
+    font-size: 35px;
+    color: var(--roofsie-white);
+    font-weight: 800;
+    line-height: 50px;
+    margin-top: 17px;
+}
+
+.trust-company__right {
+    position: relative;
+    display: block;
+    /*margin-left: 170px;
+  margin-top: 4px;*/
+    margin: 0px 0px 0px 0px;
+}
+
+.trust-compay__points {
+    position: relative;
+    display: block;
+}
+
+.trust-compay__points li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 11px 11px 11px;
+    z-index: 1;
+    width: 48%;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.trust-compay__points li:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, .20);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.trust-compay__points li:hover:before {
+    background-color: rgba(255, 255, 255, .10);
+}
+
+.trust-compay__points li+li {
+    margin-top: 10px;
+}
+
+.trust-compay__points li .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.trust-compay__points li .icon span {
+    font-size: 15px;
+    color: #e3002a;
+    position: relative;
+    display: inline-block;
+}
+
+.trust-compay__points li .text {
+    margin-left: 13px;
+}
+
+.trust-compay__points li .text p {
+    font-size: 13px;
+    color: var(--roofsie-white);
+    font-weight: 700;
+}
